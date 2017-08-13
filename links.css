@@ -55,3 +55,14 @@ section p:first-child {
 p::first-letter {
 	color: red;
 }
+
+a:link {
+	color: rgb(91,94,109);
+}
+a:visited {
+	color: rgb(91,94,109);
+}
+
+.sitenav a:link, .sitenav a:visited {
+	text-decoration: none;
+}
