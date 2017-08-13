@@ -29,6 +29,7 @@ blockquote {
 	font-size: 1.2rem;
 	margin: 0;
 	padding: 0 70px 0 70px;
+	background: url(fake1.png)top left no-repeat, url(fake2.png) bottom right no-repeat, url(test.p ng);
 }
 
 a:link {
