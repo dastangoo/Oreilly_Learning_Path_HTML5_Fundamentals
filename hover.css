@@ -63,6 +63,12 @@ a:visited {
 	color: rgb(91,94,109);
 }
 
+a:hover , a:focus{
+	text-decoration: none;
+}
+a:active {
+	color: red;
+}
 .sitenav a:link, .sitenav a:visited {
 	text-decoration: none;
 }
