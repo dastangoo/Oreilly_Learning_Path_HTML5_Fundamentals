@@ -46,3 +46,12 @@ strong {
 em {
 	font-style: normal;
 }
+
+
+section p:first-child {
+	font-weight: bold;
+}
+
+p::first-letter {
+	color: red;
+}
