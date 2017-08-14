@@ -12,16 +12,24 @@ body {
 .wrapper{
 	padding: 40px 40px 40px 260px;
 	background-color: rgb(255,255,255);
-	position: relative;
 }
 
 
-.box {
-	width: 200px;
+.box1 {
+	width: 60%;
 	padding: 10px;
-	border: 1px solid #999999;
+	margin: 0 0 20px 0;
 	box-shadow: 2px 2px 5px #cccccc;
-	position: absolute;
-	top: 20px;
+	border-color: #efefef;
+	position: relative;
+	top: 60px;
 	left: 20px;
+}
+
+.box2 {
+	width: 60%;
+	padding: 10px;
+	margin: 0 0 20px 0;
+	border: 1px solid #999999;
+	
 }
