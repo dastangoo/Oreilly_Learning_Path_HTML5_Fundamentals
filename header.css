@@ -62,8 +62,54 @@ a:hover {
 }
 
 .mainheader {
+	padding: 0 0 40px 0;	
+}
+.mainheader nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 	
 }
+.mainheader nav li {
+	float: left;
+	width: 190px;
+	margin: 0 15px 0 0;
+}
+.mainheader nav li:last-child {
+	margin: 0;
+}
+
+.mainheader nav a:link, .mainheader nav a:visited {
+	text-decoration: none;
+	display: block;
+	background-color: rgb(78,83,10);
+	color: rgb(255,255,255);
+	text-align: center;
+	padding: 5px;
+}
+
+.mainheader nav a:hover , .mainheader nav .selected a:link, .mainheader nav .selected a:visited {
+	background-color: rgb(115,122,34);
+}
+
+.sub {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.sub li a:link, .sub li a:visited {
+	display: block;
+	text-decoration: none;
+	padding: 0.4em 0 0.4em 0.4em;
+	margin-top: 0.2em;
+	color: rgb(36,34,36);
+	border-bottom: 1px solid rgba(100,100,100,0.3);
+}
+.sub li a:hover {
+	color: rgb(255,255,255);
+	background-color: rgb(36,34,46);
+}
+
 .content {
 	float:left;
  	width: 600px;
