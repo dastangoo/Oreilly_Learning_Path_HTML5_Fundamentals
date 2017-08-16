@@ -65,6 +65,20 @@
 						<input type="radio" name="like_cheese" value="no" id="cheese-no">
 					</div>
 					<div>
+						<label for="fav">Choose your favorite cheese</label>
+						<select name="fav" id="fav" multiple="multiple">
+							<option value="" selected="selected">Please select</option>
+							<optgroup label="Blue Cheese">
+								<option value="stilton">Stilton</option>		
+								<option value="bathblue">Bath Blue</option>		
+								<option value="shropshireblue">Shropshire Blue</option>		
+							</optgroup>
+							<optgroup label="Soft Cheese">
+								<option value="brie">Brie</option>		
+								<option value="camembert">Camembert</option>		
+							</optgroup>
+						</select></div>
+					<div>
 <!--						<input type="submit" value="Send the form data">-->
 								<input type="hidden" name="form" value="contact_form">
 								<button type="submit">Send the form!</button>
