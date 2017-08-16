@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>The complete book of cheese: Foreign Greats</title>
-	<link rel="stylesheet" href="footer.css">
 </head>
 <body>
 	<div class="wrapper clr">
@@ -30,6 +29,24 @@
 				</nav>
 			</header>
 			<form action="contact-form.php" method="post" enctype="multipart/form-data" id="contact-form">
+					<div>
+<!--				<input type="text" name="firstname">	-->
+<!--				<input type="text" name="email" type="email">-->
+<!--				<input type="text" name="website" type="url">-->
+<!--				<input type="number" name="age">-->
+<!--				<input type="password" name="my-password">-->
+<!--				<input type="color" name="color">-->
+<!--						<input type="date" name="birthday">				-->
+						<div>
+							<input type="text" name="firstname" required />									
+						</div>
+						<div>
+							<input type="email" name="email" required="required" placeholder="example@email.com" />							
+						</div>
+					</div>
+					<div>
+						<input type="submit" value="Send the form data">
+					</div>
 			</form>
 			<section>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quod, in! Repudiandae fugiat possimus totam illo tempora provident sequi deleniti commodi omnis, amet accusantium consequatur unde eum quam voluptatibus doloremque.</p>
