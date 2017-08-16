@@ -28,7 +28,7 @@
 					</ul>
 				</nav>
 			</header>
-			<form action="contact-form.php" method="post" enctype="multipart/form-data" id="contact-form">
+			<form action="my_script.php" method="post" enctype="multipart/form-data" id="contactform">
 					<div>
 <!--				<input type="text" name="firstname">	-->
 <!--				<input type="text" name="email" type="email">-->
@@ -50,8 +50,13 @@
 							 <textarea name="message" id="message" cols="40" rows="20"></textarea>
 						</div>
 					</div>
+					<div class="">
+						<label for="photo">Photo</label>
+						<input type="file" name="photo" id="photo" accept=".jpg,.png,.gif">
+		 			</div>
 					<div>
 <!--						<input type="submit" value="Send the form data">-->
+								<input type="hidden" name="form" value="contact_form">
 								<button type="submit">Send the form!</button>
 					</div>
 			</form>
