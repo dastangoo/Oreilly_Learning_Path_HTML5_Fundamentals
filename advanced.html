@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="advanced.css">
 </head>
 <body>
 	<header>
@@ -15,12 +15,13 @@
 		</header>
 		
 		<form action="my_script.php" method="post" id="contactform" enctype="multipart/form-data" class="forms">
+			<p><span class="req">*</span> indicates required fields</p>
 			<div>
-				<label for="firstname">First name</label>
+				<label for="firstname">First name <span class="req">*</span></label>
 				<input type="text" name="first_name" required id="firstname">
 			</div>
 			<div>
-				<label for="email">Email</label>
+				<label for="email">Email <span class="req">*</span></label>
 				<input type="email" name="email" required="required" placeholder="exmaple@example.com" id="email">
 			</div>
 			<div>
