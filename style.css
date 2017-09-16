@@ -1,0 +1,60 @@
+.forms {
+	padding: 20px;
+}
+
+.forms label {
+	float: left;
+	width: 40%;
+}
+
+.forms .radio {
+	border: none;
+	clear: left;
+	margin: 0 0 0.5em 0;
+	padding: 0;
+}
+.forms .radio label {
+	float: none;
+}
+.radio {
+	border: none;
+	clear: left;
+	margin: 0 0 0.5em 0;
+	background-color: rgb(255,255,255);
+	padding: 0 0.5em;
+	border-radius: 0.5em;
+
+}
+
+.forms .radio legend {
+	float: left;
+	width: 40%;
+	margin: 0;
+	padding: 0;
+}
+.forms div {
+	clear: left;
+	margin: 0 0 0.5em 0;
+	background-color: rgb(255,255,255);
+	padding: 0 0.5em;
+	border-radius: 0.5em;
+}
+
+.forms div.buttons {
+	background-color: transparent;
+	text-align: center;
+}
+
+.forms input[type="submit"] {
+	font-size: 1.2rem;
+	border: 1px solid #cccccc;
+	background-color: rgb(255,255,255);
+	border-radius: 0.2em;
+	padding: 0.2em 1em  0.2em 1em;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+.forms input[type="text"], .forms input[type="email"], .forms textarea {
+	width: 55%; 
+	border: 2px solid #cccccc;
+	font: 100% Arial, Helvetica, sans-serif;
+}

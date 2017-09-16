@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="form.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
@@ -48,7 +48,24 @@
 				</optgroup>
 			</select>
 			</div>
+			<div>
+				<label for="mailing">Add to mailing list?</label>
+				<input name="mailing" type="checkbox" value="true" id="mailing">
+			</div>
+			<div class="buttons">
+				<input type="hidden" name="form" value="contact_form">
+				<input type="submit" value="Send the form!">
+			</div>
 		</form>
+		
+		<aside class="sidebar">
+			<h2>Buy some cheese!</h2>
+			<ul class="links">
+				<li><a href="http://thecheeseshed.com">The Cheese Shed</a></li>
+				<li><a href="http://finecheese.co.uk">The Fine Cheese Company</a></li>
+				<li><a href="http://pongcheese.co.uk">Pong Cheese</a></li>
+			</ul>
+		</aside>
 	</div>
 </body>
 </html>
