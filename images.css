@@ -6,6 +6,10 @@ font-size: 1em;
 	box-sizing: inherit;
 }
 
+img {
+	max-width: 100%;
+}
+
 body {
 	margin: 0;
 	padding: 0;
