@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Audio and Video Fallback</title>
+	<link rel="stylesheet" href="styles.css">
+	<script type="text/javascript" src="audio-player.js"></script>  
+	<script type="text/javascript">  
+			AudioPlayer.setup("palyer.swf", {  
+					width: 290  
+			});  
+	</script>  
+</head>
+<body>
+	<div class="wrapper">
+		<h2>Audio</h2>
+		<audio controls preload="auto">
+			<source src="test.mp3" type="audio/mpeg">
+			<p>Sorry your browser does not support the HTML5 audio element.</p><a href="test.mp3">Download the MP3</a>
+				 	<p id="audioplayer_1">Alternative content</p>  
+		<script type="text/javascript">  
+			AudioPlayer.embed("audioplayer_1", {soundFile: "01 Main Title.m4a"});  
+		</script>  
+
+		</audio>
+		<h2>Video</h2>
+		<video width="300" height="160" poster="poster.png" controls>
+			<source src="test.webm" type="video/webm">
+			<source src="test.ogv" type="video/ogg">
+			<source src="test.mp4" type="video/mp4">
+			<source src="test.3gp" type="video/3gp">
+			<p>Sorry your browser does not support the HTML5 video element.</p>
+		</video>
+	</div>
+</body>
+</html>
