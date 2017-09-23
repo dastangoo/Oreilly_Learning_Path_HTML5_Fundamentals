@@ -9,8 +9,6 @@
 	<style type="text/css" media="screen">
 		video {
 			background-color: rgb(0,0,0);
-			width: 640px;
-			height: 360px;
 		}
 		audio {
 			width: 500px;
@@ -35,14 +33,16 @@
 	<section class="hero">
 		<div class="container">
              <!-- 	INSERT VIDEO HERE		 -->
-             <!-- <video controls>
-             	<source src="video.mov" type="video/mp4"/>
-             	<source src="video.mov" type="video/webm"/>
-             	<source src="video.mov" type="video/ogg"/>
-             	Your browser doesn't support HTML5 video. Please update to a more modern browser.
-             </video> -->
+             <!-- <video controls preload="none"> -->
+             <!-- <video controls preload="auto"> -->
+             <video controls preload="metadata">
+	           	<source src="video.mov" type="video/mp4"/>
+	           	<source src="video.webm" type="video/webm"/>
+	           	<source src="video.ogg" type="video/ogg"/>
+	           	Your browser doesn't support HTML5 video. Please update to a more modern browser.
+             </video>
              <p>&nbsp;</p>
-             <audio controls>
+             <audio controls loop="2">
              	<source  src="audio.mp3" type="audio/mpeg" />
              	<source  src="audio.ogg" type="audio/ogg" />
              	Your browser doesn't support HTML5 video. Please update to a more modern browser.
