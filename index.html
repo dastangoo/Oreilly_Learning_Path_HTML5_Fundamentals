@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Support Issue of Datalist</title>
+  </head>
+  <body>
+    <input type="text" list="sources">
+    <datalist id="sources">
+      Your browser doesn't support datalist!
+      <option value="Television"></option>
+      <option value="Radio"></option>
+      <option value="Newspaper"></option>
+    </datalist>
+    <br>
+    <label for="source">How did you hear about us?</label>
+    <input type="text" list="sources">
+    <datalist id="sources">
+      <select name="source">
+        <option>Please choose...</option>
+        <option value="television">Television</option>
+        <option value="radio">Radio</option>
+        <option value="newspaper">Newspaper</option>
+        <option>Other</option>
+      </select>
+      If other, please specify:
+    </datalist>
+  </body>
+</html>
