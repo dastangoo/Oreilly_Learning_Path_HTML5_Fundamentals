@@ -27,6 +27,20 @@
 
 		}
 	</style>
+	<head>
+  <link href="http://vjs.zencdn.net/6.2.7/video-js.css" rel="stylesheet">
+  <!-- If you'd like to support IE8 -->
+  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
+	<!-- LeanBack Player - CSS Theme -->
+<link rel="stylesheet" media="screen" type="text/css" href="leanbackPlayer.default.css" />
+<!-- LeanBack Player - JS Source -->
+<script type="text/javascript" src="leanbackPlayer.pack.js"></script>
+<!-- LeanBack Player Translation(s) (Examples) - JS Source -->
+<script type="text/javascript" src="leanbackPlayer.en.js"></script><!-- LeanBack Player - English Translation -->
+<script type="text/javascript" src="leanbackPlayer.de.js"></script><!-- LeanBack Player - German Translation -->
+</head>
+
 </head>
 <body>
 	<header>
@@ -72,6 +86,48 @@
              	<source  src="audio.ogg" type="audio/ogg" />
              	Your browser doesn't support HTML5 video. Please update to a more modern browser.
              </audio>
+						 <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+  poster="image.jpg" data-setup="{}">
+    <source src="video.mov" type='video/mp4'>
+    <source src="video.webm" type='video/webm'>
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+
+  		<script src="http://vjs.zencdn.net/6.2.7/video.js"></script>
+			<div class="leanback-player-video">
+	<br>
+	<!-- HTML5 Video Element -->
+	<video width="640" height="360" preload="auto" controls poster="image.jpg">
+		<!-- HTML5 Video Source(s) -->
+		<source src="video.mov" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+		<source src="video.webm" type='video/webm; codecs="vp8, vorbis"' />
+		<source src="video.ogg" type='video/ogg; codecs="theora, vorbis"' />
+
+		<!-- Flash-Fallback (JW Player) -->
+		<object class="leanback-player-flash-fallback" width="640" height="360" type="application/x-shockwave-flash" data="http://player.longtailvideo.com/player.swf">
+			<param name="movie" value="http://player.longtailvideo.com/player.swf" />
+			<param name="allowFullScreen" value="true" />
+			<param name="wmode" value="opaque" />
+			<param name="bgcolor" value="#000000" />
+			<param name="flashVars" value="controlbar=over&amp;file=video.mov&amp;image=image.jpg" />
+		</object>
+
+		<!-- HTML-Fallback -->
+		<div class="leanback-player-html-fallback" style="width: 640px; height: 360px;">
+			<img src="image.jpg" width="640" height="360" alt="Poster Image"
+				title="No HTML5-Video playback capabilities found. Please download the video(s) below." />
+			<div>
+				<strong>Download Video:</strong>
+				<a href="video.mov">.mov</a>
+				<a href="video.webm">.webm</a>
+				<a href="video.ogg">.ogg</a>
+			</div>
+		</div>
+	</video>
+</div>
 		</div>
 		<div class="clear"></div>
 	</section>
