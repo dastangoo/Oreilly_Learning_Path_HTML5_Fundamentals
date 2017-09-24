@@ -9,6 +9,9 @@
 	<style type="text/css" media="screen">
 		video {
 			background-color: rgb(0,0,0);
+			width: 100%;
+			max-width: 640px;
+			height: auto;
 		}
 		audio {
 			width: 500px;
@@ -20,6 +23,9 @@
 				font-weight: bold;
 				color: rgb(113, 80, 109);
 			}
+		@@media query {
+
+		}
 	</style>
 </head>
 <body>
@@ -46,13 +52,18 @@
              <!-- <video controls muted> -->
              <!-- <video controls autoplay> -->
              <!-- <video controls loop> -->
-             <video controls poster="image.jpg">
+             <!-- <video controls poster="image.jpg">
+	           	<source src="video-large.mov" type="video/mp4" media="all and (min-width:481px)"/>
+	           	<source src="video-small.mov" type="video/mp4" media="all and (max-width:480px)"/>
+	           	<source src="video-large.webm" type="video/webm" media="all and (min-width:481px)"/>
+	           	<source src="video-small.webm" type="video/webm" media="all and (max-width:480px)"/>
+	           	<source src="video-large.ogg" type="video/ogg" media="all and (min-width:481px)"/>
+	           	<source src="video-small.ogg" type="video/ogg" media="all and (max-width:480px)"/>
+             </video> -->
+             <video controls preload="none" poster="image.jpg">
 	           	<source src="video.mov" type="video/mp4"/>
 	           	<source src="video.webm" type="video/webm"/>
 	           	<source src="video.ogg" type="video/ogg"/>
-
-							<track src="captions.vtt" srclang="en" kind="captions" default></track>
-							<object width="425" height="300" id="undefined" name="undefined" data="http://releases.flowplayer.org/swf/flowplayer-3.2.18.swf" type="application/x-shockwave-flash"><param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.18.swf" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="flashvars" value='config={"clip":{"url":"http://edge.flowplayer.org/flowplayer-700.flv"},"playlist":[{"url":"http://edge.flowplayer.org/flowplayer-700.flv"}]}' /></object>
              </video>
 						 <p class="fallbacklinks">Download this video as: <a href="video.mov">MP4</a>, <a href="video.webm">WebM</a>, <a href="video.ogg">OGV</a></p>
              <p>&nbsp;</p>
