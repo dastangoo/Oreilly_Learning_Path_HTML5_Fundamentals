@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Autocomplete with datalist</title>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="jquery-ui.css" />
+    <script src="jquery-ui.js"></script>
+    <script type="text/javascript" src="desserts.js"></script>
+    <script>
+      $(function() {
+        $('#tags').autocomplete({
+          source: suggestions
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <input type="text" id="tags">
+  </body>
+</html>
