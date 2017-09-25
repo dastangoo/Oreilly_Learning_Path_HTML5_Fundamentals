@@ -5,9 +5,44 @@
     <title>Autofocus</title>
   </head>
   <body>
-    <label for="field1">Type here:</label>
-    <input type="text" id="field1">
-    <textarea name="name" rows="8" cols="80"></textarea>
-    <button type="button" name="button" autofocus>Click me!!!</button>
+    <form class="" action="index.html" method="post">
+      <label for="field1">Type here:</label>
+      <input type="text" id="field1" autofocus>
+    </form>
+    <script type="text/javascript">
+      (function () {
+        // Proceed only if new inputs don't have the autofocus property
+        if ( document.createElement("input").autofocus === undefined ) {
+
+            // // Get a reference to all forms, and an index variable
+            // var forms = document.forms, fIndex = -1;
+            //
+            // // Begin cycling over all forms in the document
+            // formloop: while ( ++fIndex < forms.length ) {
+            //
+            //     // Reference all elements in form, and an index variable
+            //     var elements = forms[ fIndex ].elements, eIndex = -1;
+            //
+            //     // Begin cycling over all elements in collection
+            //     while ( ++eIndex < elements.length ) {
+            //
+            //         // Check for the autofocus attribute
+            //         if ( elements[ eIndex ].attributes["autofocus"] ) {
+            //
+            //             // If found, trigger focus
+            //             elements[ eIndex ].focus();
+            //
+            //             // And break out of outer loop
+            //             break formloop;
+            //
+            //         }
+            //
+            //     }
+            //
+            // }
+            document.getElementById('field1').focus();
+        }
+      }());
+    </script>
   </body>
 </html>
