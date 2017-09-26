@@ -3,6 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Web Shims for Enhancing Old Browsers</title>
+    <style media="screen">
+       label {
+         float: left;
+         width: 160px;
+         margin-right: 15px;
+         text-align: right;
+       }
+       input[type="submit"] {
+         margin: 10px 0 0 145px;
+       }
+    </style>
+    <link rel="stylesheet" href="css/prism.css" />
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="../js-webshim/minified/polyfiller.js"></script>
+    <script>
+			webshim.polyfill();
+			// load all available polyfills
+		</script>
+
   </head>
   <body>
     <form method="post">
