@@ -6,14 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Canvas</title>
   <script type="text/javascript">
-    var devPxRatio = window.devicePixelRatio;
-
-    var canvasPxRatio = document.querySelector("canvas")
-                                .getContext("2d")
-                                .webkitBackingStorePixelRatio;
+    document.querySelector("canvas")
+            .getContext("2d")
+            .setScale(2, 2);
   </script>
 </head>
 <body>
-  <canvas id="canvas" width="300" height="200"></canvas>
+  <canvas id="canvas" width="600" height="400" style="width: 300px; height: 200px"></canvas>
 </body>
 </html>
