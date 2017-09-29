@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Webapp</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,inital-scale=no">
+<style>
+  #output {
+    font-size: 80px;
+    text-align: center;
+    color: red;
+  }
+</style>
+<script>
+  /* touchstat, touchmove, touchend touch events */
+  document.addEventListener('touchstart', function(e) {
+    var output = document.getElementById('output');
+    output.innerHTML = event.touches.length + "touch(es)";
+    // event.touches[0].pageX
+  });
+</script>
+<div id="output"></div>
