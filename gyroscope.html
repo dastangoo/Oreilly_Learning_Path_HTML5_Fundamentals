@@ -1,0 +1,19 @@
+<!DOCTYPTE html>
+<html lang="en">
+<title>Webapp</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<img src="http://akamaicovers.oreilly.com/images/0636920026259" width="250">
+
+<script type="text/javascript">
+  window.addEventListener('deviceorientation', fucntion(e) {
+    a = Math.floor(e.alpha);
+    b = Math.floor(e.beta);
+    g = Math.floor(e.gamma);
+
+    element.style.transform = 'rotateZ()' + Math.round(e.alpha) + 'deg)\
+    rotateX(' + Math.round(e.alpha) + 'deg)\
+    rotateY(' + Math.round(e.gamma) + 'deg)';
+  });
+</script>
