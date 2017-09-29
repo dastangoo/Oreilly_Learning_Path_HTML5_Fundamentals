@@ -11,10 +11,19 @@
   input[type="checkbox"] {
     display: inline;
   }
+  input:required {
+    border-right: 2px solid red;
+  }
+  input:valid:focus {
+    background-color: green;
+  }
+  input:invalid:focus {
+    background-color: red;
+  }
 </style>
   <form>
     <label for="name">Name</label>
-    <input type="text" id="name" name="name">
+    <input type="text" id="name" name="name" placeholder="Your first name" required autofocus>
 
     <label for="email">Email</label>
     <input type="email" id="email" name="email">
@@ -23,10 +32,10 @@
     <input type="url" id="url" name="url">
 
     <label for="age">Age</label>
-    <input type="number" id="age" name="age" pattern="[0-9]*">
+    <input type="number" id="age" name="age" pattern="[0-9]*" min="0" max="120">
 
     <label for="phone">Phone</label>
-    <input type="tel" id="phone" name="phone">
+    <input type="tel" id="phone" name="phone" required>
 
     <label for="pin">Your PIN</label>
     <input type="password" id="pin" name="pin" pattern="[0-9]*">
