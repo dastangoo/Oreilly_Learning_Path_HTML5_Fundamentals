@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Webapp</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style media="screen">
+  #ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+</style>
+<body onorientationchange="">
+  <div id="ball"></div>
+</body>
+
+<script type="text/javascript">
+// Position Variables
+var x = 0;
+var y = 0;
+
+// Speed - Velocity
+var vx = 0;
+var vy = 0;
+
+// Acceleration
+var ax = 0;
+var ay = 0;
+
+var delay = 10;
+var vMultiplier = 0.01;
+
+if (window.DeviceMotionEvent == undefined) {
+  document.getElementById("no").style.display = "block";
+  document.getElementById("yes").style.display = "none";
+} else {
+  window.ondevicemotion = function(event) {
+    ax = event.accelerationIncludingGravity.x;
+    ay = event.accelerationIncludingGravity.y;
+    console.log("Accelerometer data - x: " +
+    event.accelerationIncludingGravity.x + " y: " +
+    event.accelerationIncludingGravity.y + " z: ") +
+    event.accelerationIncludingGravity.z);
+  }
+  setInterval(fucntion() {
+    vy = vy + -(ay);
+    vx = vx + ax;
+
+    var ball = document.getElementById("ball");
+    y = parseFloat(y + vy * vMultiplier);
+    x = parseFloat(x + xy * vMultiplier);
+
+    if (x < 0) {
+      x = 0;
+      vx = 0;
+    }
+    if (y < 0) {
+      y = 0;
+      vy = 0;
+    }
+    if (x > docment.documentElement.clientWidth - 20) {
+      x = document.documentElement.clientWidth - 20;
+      vx = 0;
+    }
+    if (y > docment.documentElement.clientHeight - 20) {
+      x = document.documentElement.clientHeight - 20;
+      vy = 0;
+    }
+    ball.style.top = y + "px";
+    ball.style.left = x + "px";
+  }, delay);
+}
+</script>
