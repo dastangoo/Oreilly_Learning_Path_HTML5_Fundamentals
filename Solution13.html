@@ -5,8 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML5 Mobile Web</title>
+  </style>
 </head>
 <body>
-  <img src="photo.png" width="300" srcset="photo_lo.png 1x, photo_hi.png 2x, photo_uhi.png 3x">
+  <picture>
+    <source src="hi.jpg" media="(min-width: 300px)">
+    <source src="mid.jpg" media="(min-width: 600px)">
+    <source src="lo.jpg">
+    <img src="fallback.jpg" alt="">
+  </picture>
 </body>
 </html>
+``
