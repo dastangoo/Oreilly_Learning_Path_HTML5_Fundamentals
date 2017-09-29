@@ -1,5 +1,5 @@
-<!DOCTYPTE html>
-<html lang="eng">
+<!DOCTYPE html>
+<html lang="en">
 <title>Mobile Forms</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,user-scalable=no">
@@ -13,11 +13,21 @@
   }
 </style>
   <form>
-    <!-- <p>First Name</p> -->
-    <label for="firstname">First Name</label>
-    <input type="text" id="firstname" name="firstname">
-    <input type="checkbox" name="accept" id="accpet">
-    <label for="accept">I Accept Your Terms</label>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
 
-    <!-- I Accept Your Terms -->
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email">
+
+    <label for="url">URL of your blog</label>
+    <input type="url" id="url" name="url">
+
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age" pattern="[0-9]*">
+
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone">
+
+    <label for="pin">Your PIN</label>
+    <input type="password" id="pin" name="pin" pattern="[0-9]*">
   </form>
